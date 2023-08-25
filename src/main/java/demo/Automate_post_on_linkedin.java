@@ -114,6 +114,7 @@ Thread.sleep(2000);
 //  photo.click();
 //  //Thread.sleep(1000);
 //  String path="C:\\Users\\hp\\OneDrive\\Pictures\\chicken pickle.jpg";
+//use robot class here 
 //   photo.sendKeys(path+Keys.ENTER);
 //   Thread.sleep(1000);
 //   System.out.println("path added .........");

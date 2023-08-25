@@ -23,9 +23,9 @@ public class App {
           
          
        
-        Automate_post_on_linkedin postObj=new Automate_post_on_linkedin();
-        postObj.createPost();
-        postObj.endTest();
+        // Automate_post_on_linkedin postObj=new Automate_post_on_linkedin();
+        // postObj.createPost();
+        // postObj.endTest();
         // END Tests
 
         // tests.endTest(); // End your test by clearning connections and closing
@@ -40,9 +40,9 @@ public class App {
         // imgurl.image_Urls();
         // imgurl.endTest();
 
-        // Automate_imdb_ratings imdbobj=new Automate_imdb_ratings();
-        // imdbobj.imdb();
-        // imdbobj.endTest();
+        Automate_imdb_ratings imdbobj=new Automate_imdb_ratings();
+        imdbobj.imdb();
+        imdbobj.endTest();
         
     }
 

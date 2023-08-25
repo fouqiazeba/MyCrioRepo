@@ -46,23 +46,34 @@ public class Automate_imdb_ratings {
     System.out.println("Total movies in table are :"+totalMoviesInTable);
 
     //What is the oldest movie on the list?
-     dropdown.click();
+      WebElement againdropdown=  driver.findElement(By.cssSelector("#sort-by-selector"));
+      againdropdown.click();
       select.selectByVisibleText("Release date");
      Thread.sleep(3000);
-    WebElement oldest=movies.get(0).findElement(By.tagName("h3")); 
+     System.out.println("drop down clicked on release date");
+         List<WebElement> moviesBasedOnReleaList=driver.findElements(By.xpath("//li[@class='ipc-metadata-list-summary-item sc-bca49391-0 eypSaE cli-parent']"));
+
+     Thread.sleep(3000);
+    WebElement oldest=moviesBasedOnReleaList.get(0).findElement(By.tagName("h3")); 
     String oldestMovie=oldest.getText();
     System.out.println("oldest movie is "+ oldestMovie);
 
     //What is the latest  movie on the list?
-     WebElement newest =movies.get(movies.size()-1).findElement(By.tagName("h3"));
+
+     WebElement newest =moviesBasedOnReleaList.get(moviesBasedOnReleaList.size()-1).findElement(By.tagName("h3"));
      String newestMovie=newest.getText();
      System.out.println(" most recent movie is :" + newestMovie);
 
      // Which movie has the most user ratings?
-       dropdown.click();
+           WebElement onceagaindropdown=  driver.findElement(By.cssSelector("#sort-by-selector"));
+
+       onceagaindropdown.click();
+
         select.selectByVisibleText("IMDb rating");
          Thread.sleep(3000);
-    WebElement mostRated=movies.get(0).findElement(By.tagName("h3")); 
+    List<WebElement> moviesBasedOnuserRating=driver.findElements(By.xpath("//li[@class='ipc-metadata-list-summary-item sc-bca49391-0 eypSaE cli-parent']"));
+
+    WebElement mostRated=moviesBasedOnuserRating.get(0).findElement(By.tagName("h3")); 
     String mostRatedMovie=mostRated.getText();
     System.out.println("Most rated movie is "+ mostRatedMovie);
    }

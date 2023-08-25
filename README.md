@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Selenium Boilerplate: 
    This java project contains the essentials to get started with selenium quickly without having to go through the hassle of downloading individual dependencies one by one. 
 
@@ -50,3 +51,6 @@
 
 
 
+=======
+# MyCrioRepo
+>>>>>>> e5705a06e9f39cc15d766b7a0d4104c42a7bcd0c

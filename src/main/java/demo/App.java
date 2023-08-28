@@ -37,17 +37,17 @@ public class App {
         // nf.endTest();
 
 
-        // Automate_image_urls  imgurl=new Automate_image_urls();
-        // imgurl.image_Urls();
-        // imgurl.endTest();
+        Automate_image_urls  imgurl=new Automate_image_urls();
+        imgurl.image_Urls();
+        imgurl.endTest();
 
         // Automate_imdb_ratings imdbobj=new Automate_imdb_ratings();
         // imdbobj.imdb();
         // imdbobj.endTest();
 
-        Automate_window_handle winObj= new Automate_window_handle();
-        winObj.wnidow_handle();
-        winObj.endTest();
+        // Automate_window_handle winObj= new Automate_window_handle();
+        // winObj.wnidow_handle();
+        // winObj.endTest();
         
     }
 

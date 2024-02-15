@@ -7,7 +7,7 @@ import java.util.Map;
 public class occerance {
     public static void main(String args[]){
   String name= "AGra hello 123  ";
-  name= name.toLowerCase();
+  //name= name.toLowerCase();
    
    System.out.println(name);
 

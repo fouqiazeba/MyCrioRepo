@@ -1,0 +1,14 @@
+switch to the iframe by tagName
+driver.switchTo().frame(frameName);
+
+get the element in side the frame by body tagName
+WebElement ele1=driver.findElement(By.tagNmae("body"));
+System.out.println(ele1.getText());
+switch to the child
+driver.switchTo().frame(1);
+
+get the webelemnt by body tag 
+WebElement ele2=driver.findElement(By.tagNmae("body"));
+System.out.println(ele2.getText());
+switch to parent frame.
+driver.switchTo().defaultContent();
